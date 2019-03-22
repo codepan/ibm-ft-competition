@@ -1,0 +1,24 @@
+html, body, h1, h2, ul, li, p{
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,h2{
+  font-style: normal;
+  font-size: inherit;
+  font-weight: normal;
+}
+ul, li {
+  list-style: none;
+}
+
+img{
+  vertical-align: middle;
+}
+
+a{
+  text-decoration: none;
+}
