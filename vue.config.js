@@ -2,5 +2,6 @@ module.exports = {
   devServer: {
     disableHostCheck: true
   },
-  baseUrl: './'
+  baseUrl: './',
+  lintOnSave:false
 }

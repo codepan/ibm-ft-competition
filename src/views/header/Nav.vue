@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style rel="stylesheet/scss" lang="scss">
   @import "../../assets/style/var";
   .nav{
     position: fixed;
@@ -29,21 +29,22 @@ export default {
     right: 0;
     z-index: 1;
     height: $nav-height;
-    background: #333;
+    background: #132e39;
     .nav-list{
       display: flex;
       height: 100%;
-      margin: 0 200px;
+      margin: 0 240px;
       .nav-item{
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
-        color: #fff;
+        font-size: 15px;
+        color: #fefefe;
         cursor: pointer;
+      transition: all .5s ease-out;
         &:hover{
-          background: #333;
+          color: $color-primary;
         }
       }
     }

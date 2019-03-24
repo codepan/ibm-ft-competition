@@ -33,6 +33,7 @@ export default {
 </script>
 <style lang="scss">
   .ft-home{
+    background: #f1f1f1;
     .ft-header{
       .apply{
         position: fixed;

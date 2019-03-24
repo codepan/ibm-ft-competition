@@ -1,9 +1,11 @@
 <template>
   <article class="article">
     <div class="title-wrapper">
+      <div class="title-line"></div>
       <div class="title">
         <slot name="title"></slot>
       </div>
+      <div class="title-line circle-left"></div>
     </div>
     <div class="content">
       <slot></slot>
@@ -12,30 +14,49 @@
 </template>
 
 <script>
-export default {
-}
+  export default {}
 </script>
 
-<style lang="scss">
+<style rel="stylesheet/scss" lang="scss">
   @import "../assets/style/var";
-  .article{
-    .title-wrapper{
+
+  .article {
+    .title-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      .title{
-        margin-top: 20px;
+      height: 60px;
+      .title {
         padding: 0 10px;
-        color: $color-primary;
-        font-size: 34px;
-        border-left: 2px solid $color-primary;
-        border-right: 2px solid $color-primary;
+        margin: 0 20px;
+        color: $color-title;
+        font-size: 26px;
         line-height: 0.5;
+      }
+      .title-line {
+        position: relative;
+        width: 33%;
+        border-bottom: 1px solid $color-title;
+        &:after {
+          content: '';
+          position: absolute;
+          top: -5px;
+          right: -10px;
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          border: 2px solid $color-title;
+        }
+        &.circle-left:after {
+          left: -10px;
+        }
       }
     }
     .content {
       margin-top: 50px;
       color: $color-content;
+      font-size: 14px;
     }
   }
 </style>
