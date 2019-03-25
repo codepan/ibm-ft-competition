@@ -479,7 +479,7 @@
           height: 0;
           border: none;
           border-bottom: 6px solid transparent;
-          border-left: 10px solid #ff0000;
+          border-left: 10px solid #ed4014;;
           border-top: 6px solid transparent;
         }
         .text {
@@ -616,6 +616,7 @@
                 font-size: 12px;
                 text-align: right;
                 color: $color-primary;
+                cursor: pointer;
               }
               .url-wrapper {
                 .label {
@@ -623,6 +624,7 @@
                 }
                 .url {
                   color: $color-primary;
+                  cursor: pointer;
                 }
               }
             }
@@ -654,7 +656,6 @@
                 transition: all .2s ease;
               }
               &:hover::before {
-                cursor: pointer;
                 background: $color-primary;
               }
               &:hover {
@@ -691,7 +692,7 @@
             font-size: 14px;
             line-height: 2;
             .bonus {
-              color: #ff0000;
+              color: #ed4014;
             }
           }
         }
@@ -723,12 +724,14 @@
                 font-weight: 400;
               }
               .text {
-                margin-top: 10px;
+                margin-top: 20px;
                 .person-list {
                   .person-item {
                     display: flex;
                     align-items: center;
-                    margin-top: 5px;
+                    &:not(:first-child){
+                      margin-top: 10px;
+                    }
                     .person-item-portrait {
                       width: 40px;
                       height: 40px;
@@ -745,7 +748,6 @@
                       margin-left: 15px;
                       font-size: 12px;
                       .person-name {
-                        margin-bottom: 3px;
                         color: $color-primary;
                         font-size: 14px;
                       }
